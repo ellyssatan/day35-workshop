@@ -1,0 +1,19 @@
+<h1>Post Contact Information</h1>
+
+<form [formGroup]="contactForm" (ngSubmit)="postContact()">
+    <table>
+      <tr>
+        <td>Name: </td>
+        <td><input type="text" placeholder="Name" formControlName="name"></td>
+      </tr>
+      <tr>
+        <td>Phone Number: </td>
+        <td><input type="number" placeholder="Number" formControlName="phone"></td>
+      </tr>
+      <tr>
+        <td>Email: </td>
+        <td><input type="email" placeholder="Email" formControlName="email"></td>
+      </tr>
+    </table>
+    <button type="submit">Add</button>
+</form>
